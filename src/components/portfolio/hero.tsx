@@ -24,7 +24,7 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground mb-6">
             Marko <span className="text-primary">Zimonjic</span>
           </h1>
-          
+
           <h2 className="text-2xl md:text-3xl text-muted-foreground font-mono mb-8 max-w-2xl leading-relaxed">
             Senior Java Backend Developer building reliable systems for telecom, banking, and fintech.
           </h2>
@@ -43,7 +43,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap items-center gap-4">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium">
-              <a href="/Marko_Zimonjic_CV.pdf" download="Marko_Zimonjic_CV.pdf">
+              <a href={`${import.meta.env.BASE_URL}Marko_Zimonjic_CV.pdf`} download="Marko_Zimonjic_CV.pdf">
                 <Download className="w-5 h-5 mr-2" />
                 Download CV
               </a>
@@ -55,9 +55,9 @@ export default function Hero() {
               </a>
             </Button>
             <div className="flex items-center gap-2 ml-2">
-              <a 
-                href="https://www.linkedin.com/in/marko-zimonjic/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/marko-zimonjic/"
+                target="_blank"
                 rel="norenoopener noreferrer"
                 className="p-3 rounded-full bg-secondary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="LinkedIn Profile"
@@ -70,7 +70,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}

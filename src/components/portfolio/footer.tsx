@@ -69,7 +69,7 @@ export default function Footer() {
               <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
                 Looking for a senior Java backend role — open to remote, hybrid, or on-site (Belgrade). Let's discuss how my experience can help your team ship reliable systems.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
                 <Button asChild size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 text-lg h-14 px-8">
                   <a href="mailto:marko.zimonjic@hotmail.com">
@@ -78,7 +78,7 @@ export default function Footer() {
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="w-full sm:w-auto text-lg h-14 px-8 border-border hover:bg-secondary">
-                  <a href="/Marko_Zimonjic_CV.pdf" download="Marko_Zimonjic_CV.pdf">
+                  <a href={`${import.meta.env.BASE_URL}Marko_Zimonjic_CV.pdf`} download="Marko_Zimonjic_CV.pdf">
                     Download Resumé
                   </a>
                 </Button>
