@@ -58,7 +58,7 @@ export default function Hero() {
               <a
                 href="https://www.linkedin.com/in/marko-zimonjic/"
                 target="_blank"
-                rel="norenoopener noreferrer"
+                rel="noopener noreferrer"
                 className="p-3 rounded-full bg-secondary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="LinkedIn Profile"
               >
